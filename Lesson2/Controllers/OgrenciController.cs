@@ -1,19 +1,29 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Lesson2.Models;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.VisualBasic;
 
 namespace Lesson2.Controllers
 {
     public class OgrenciController : Controller
-    {
+    { 
+        static List<Ogrenci> ogrenciler = new List<Ogrenci>();
         public IActionResult OgrenciEkle()
         {
             return View();
         }
+       
 
-        public string OgrKaydet(string fname, string lname, string Onum)
+        
+        [HttpPost]
+        public IActionResult OgrKaydet(OgrenciViewModel ogr)
         {
-            string Msg = fname + lname + Onum;
-            return Msg;
+            return View(ogr);
+        }
+
+        public IActionResult OgrKaydet4(OgrenciViewModel ogr)
+        {
+            ogrenciler.Add(ogr);
+            return RedirectToAction()
         }
     }
 }
