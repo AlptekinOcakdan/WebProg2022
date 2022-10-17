@@ -1,0 +1,70 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@{
+    var x = DateTime.Now.Year;
+    var y = x % 4;
+    var mesaj = "";
+    var mesaj2 = "";
+    var days = DateTime.Now.DayOfWeek.ToString();
+    var days2 = DateTime.Now.DayOfWeek;
+    var days3= Convert.ToInt16(DateTime.Now.DayOfWeek);
+    if (y == 0)
+    {
+        mesaj = "Bu yıl artık yıl değil";
+    }
+    else
+    {
+        mesaj = "Bu yıl Artık yıl";
+    }
+}
+<h1>@mesaj</h1>
+
+<h1>@y</h1>
+
+@for (int i = 0; i < 6; i++)
+{
+    <h1>@i</h1>
+}
+
+@{
+    string[] renkler = new string[]
+    {
+        "Green",
+        "Black",
+        "red"
+    };
+}
+
+@foreach (var renk in renkler)
+{
+    <li style="color: @renk ">@renk</li>
+}
+
+@{
+    switch (days3)
+    {
+        case 1:
+            mesaj2 = "Pazartesi";
+            break;
+        case 2:
+            mesaj2 = "Salı";
+            break;
+        case 3:
+            mesaj2 = "Çarşamba";
+            break;
+        case 4:
+            mesaj2 = "Perşembe";
+            break;
+        case 5:
+            mesaj2 = "Cuma";
+            break;
+        default:
+            mesaj2 = "Tatil";
+            break;
+    }
+}
+
+<h1>@mesaj2</h1>
+<h1>@days3</h1>
