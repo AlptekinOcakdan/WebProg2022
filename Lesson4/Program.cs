@@ -22,6 +22,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Ogrenci}/{action=Index}/{id?}");
+    pattern: "{controller=Ogrenci}/{action=User}/{id?}");
 
 app.Run();

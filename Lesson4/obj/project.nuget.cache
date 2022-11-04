@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "w3BPxfRjx9t4IZRb0WYv4xOjo8PYgBtp2sUZvCoqCuH0xxKSCz6C9i+Xqo4KLhdEPvkum1HoQ9dg1rP9z/1ufg==",
+  "dgSpecHash": "d0Ly2B6SoS1PDSse369zwZyNXUdsLsn0S7gtPgodX9xkxL/fNu4A34/INcQI+ZxxyyQkUEYMls0CYHIQfjcJ+g==",
   "success": true,
   "projectFilePath": "C:\\Users\\alpte\\PhpstormProjects\\WebProg2022\\Lesson4\\Lesson4.csproj",
   "expectedPackageFiles": [
@@ -150,7 +150,10 @@
     "C:\\Users\\alpte\\.nuget\\packages\\system.threading.timer\\4.3.0\\system.threading.timer.4.3.0.nupkg.sha512",
     "C:\\Users\\alpte\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512",
     "C:\\Users\\alpte\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
-    "C:\\Users\\alpte\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512"
+    "C:\\Users\\alpte\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
+    "C:\\Users\\alpte\\.nuget\\packages\\xunit.abstractions\\2.0.3\\xunit.abstractions.2.0.3.nupkg.sha512",
+    "C:\\Users\\alpte\\.nuget\\packages\\xunit.extensibility.core\\2.4.2\\xunit.extensibility.core.2.4.2.nupkg.sha512",
+    "C:\\Users\\alpte\\.nuget\\packages\\xunit.extensibility.execution\\2.4.2\\xunit.extensibility.execution.2.4.2.nupkg.sha512"
   ],
   "logs": []
 }

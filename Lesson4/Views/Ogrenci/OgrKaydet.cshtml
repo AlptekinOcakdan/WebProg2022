@@ -1,1 +1,58 @@
-﻿<h1>Kayıt Başarılı</h1>
+﻿@model IEnumerable<Lesson4.Models.Ogrenci>
+
+@{
+    ViewData["Title"] = "View";
+}
+
+<h1>View</h1>
+
+<p>
+    <a asp-action="Index">Create New</a>
+</p>
+<table class="table">
+    <thead>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.OgrAd)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OgrSoyad)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OgrNo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OgrYas)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Sehirler)
+        </th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.OgrAd)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OgrSoyad)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OgrNo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OgrYas)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Sehirler)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>

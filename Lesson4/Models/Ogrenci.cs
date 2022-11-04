@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.Collections;
+using System.ComponentModel.DataAnnotations;
 
 namespace Lesson4.Models
 {
@@ -15,5 +16,7 @@ namespace Lesson4.Models
         public int OgrYas { get; set; }
         [Display(Name = "Şehirler")]
         public string Sehirler { get; set; }
+
+   
     }
 }
